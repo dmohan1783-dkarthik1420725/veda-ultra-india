@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 
 // API Configuration - Key is auto-injected by the environment
-const API_KEY = "";
+const API_KEY = process.env.REACT_APP_GEMINI_API_KEY || "";
 const TEXT_MODEL = "gemini-3-flash-preview";
 const IMAGE_MODEL = "imagen-4.0-generate-001";
 const AUDIO_MODEL = "gemini-2.5-flash-preview-tts";
